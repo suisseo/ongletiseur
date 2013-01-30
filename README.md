@@ -1,4 +1,4 @@
 ongletiseur
 ===========
 
-A jQuery Plugin to create awesome tabs
+A lightweight jQuery Plugin to create tabs based on hashchange event
