@@ -1,0 +1,39 @@
+/* 
+   ____  __       __          _    __
+  / __ \/ /_     / /_  ____ _(_)  / /
+ / / / / __ \   / __ \/ __ `/ /  / / 
+/ /_/ / / / /  / / / / /_/ / /  /_/  
+\____/_/ /_/  /_/ /_/\__,_/_/  (_)   
+                                     
+Authors: Mathieu Zwygart & Steve Buscemi
+
+*/
+html { margin: 0; padding: 0; font-size: 62.5%; }
+body { margin: 0; padding: 0; font-size: 1.6rem; font-family: sans-serif; color: #070707; }
+
+a { color: #8f390a; }
+a:hover,
+a:active,
+a:focus { color: #555; }
+
+.menu, 
+.menu li { margin: 0; padding: 0; list-style-type: none; }
+.menu a { display: block; text-decoration: none; }
+
+.menu.horizontal li { display: inline-block; }
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.tabs-menu { background: #070707; padding: 50px 50px 0px 50px; }
+.tabs-menu li {  margin: 0px -1px 0px -2px; }
+.tabs-menu a { background: #f4f4f4; color: #070707; padding: 10px; }
+.tabs-menu a:hover,
+.tabs-menu a:active,
+.tabs-menu a:focus { background: #e2df20; }
+.tabs-menu .current a { background: #fff; padding-bottom: 11px; }
+
+.tab { padding: 50px; }

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo Ongletiseur</title>
+	<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>	
+
+	<div class="tabs-container">
+		<ul class="menu horizontal tabs-menu">
+			<li><a href="#measure-analysis">Mesure &amp; Analyse de données</a></li>
+			<li><a href="#campaign-management">Gestion de campagnes Adwords</a></li>
+			<li><a href="#conversion-optimization">Optimisation des taux de conversions</a></li>
+		</ul>
+		
+		<div class="tab" id="measure-analysis">
+			<h2>Mesure &amp; Analyse de données</h2>
+		</div>
+		
+		<div class="tab" id="campaign-management">
+			<h2>Gestion de campagnes Adwords</h2>
+		</div>
+		
+		<div class="tab" id="conversion-optimization">
+			<h2>Optimisation des taux de conversions</h2>
+		</div>
+	</div><!-- /.container -->
+	
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script src="js/jquery.ba-hashchange.min.js"></script>
+	<script src="js/jquery.ongletiseur.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function(){
+			$('.tabs-container').ongletiseur();
+		});
+	</script>
+</body>
+</html>
