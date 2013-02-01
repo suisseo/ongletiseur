@@ -11,17 +11,17 @@ Authors: Mathieu Zwygart & Charlie the unicorn
 
 (function($) {
     $.fn.ongletiseur = function(options) {
-			var settings = $.extend({}, options);
+			var settings = $.extend({ activeClass: 'active' }, options);
 			
 			var tabsMenu = $(this).find('.tabs-menu'),
 			tabs = $(this).find('.tab'),
 			switchTab = function(tab){
 				tabs.hide();
 				$(tab).toggle();
-				tabsMenu.find('li').removeClass('active');
+				tabsMenu.find('li').removeClass(settings.activeClass);
 				tabsMenu.find('a').each(function(){
 					if( $(this).attr('href') == tab){
-						$(this).parent().addClass('active');
+						$(this).parent().addClass(settings.activeClass);
 					}
 				})
 			}
@@ -36,6 +36,6 @@ Authors: Mathieu Zwygart & Charlie the unicorn
 				switchTab(location.hash)
 			});
 			
-			return this;
+			return this;	
     };
 })(jQuery);
