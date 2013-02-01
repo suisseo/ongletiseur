@@ -34,6 +34,6 @@ a:focus { color: #555; }
 .tabs-menu a:hover,
 .tabs-menu a:active,
 .tabs-menu a:focus { background: #e2df20; }
-.tabs-menu .current a { background: #fff; padding-bottom: 11px; }
+.tabs-menu .active a { background: #fff; padding-bottom: 11px; }
 
 .tab { padding: 50px; }

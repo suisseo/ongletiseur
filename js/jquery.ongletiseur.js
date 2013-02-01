@@ -15,13 +15,13 @@ Authors: Mathieu Zwygart & Charlie the unicorn
 			
 			var tabsMenu = $(this).find('.tabs-menu'),
 			tabs = $(this).find('.tab'),
-			switchTab = function(target){
+			switchTab = function(tab){
 				tabs.hide();
-				$(target).toggle();
-				tabsMenu.find('li').removeClass('current');
+				$(tab).toggle();
+				tabsMenu.find('li').removeClass('active');
 				tabsMenu.find('a').each(function(){
-					if( $(this).attr('href') == target){
-						$(this).parent().addClass('current');
+					if( $(this).attr('href') == tab){
+						$(this).parent().addClass('active');
 					}
 				})
 			}
