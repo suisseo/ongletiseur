@@ -11,9 +11,7 @@ Authors: Mathieu Zwygart & Charlie the unicorn
 
 (function($) {
     $.fn.ongletiseur = function(options) {
-			var defaults = {};
-            
-			var settings = $.extend(defaults, options);
+			var settings = $.extend({}, options);
 			
 			var tabsMenu = $(this).find('.tabs-menu'),
 			tabs = $(this).find('.tab'),
